@@ -33,47 +33,58 @@
         </div>
         <div class="rcontainer">
             <h2>Let's do this!</h2>
+
         <div class="form-container">
             
-            <form class="signup-form">
-                <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" required>
+            <form class="signup-form" action="#" method="post">
+                <div class="1stCol">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <span class="error" id="email-error">Please enter a valid email address.</span>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        
+                    </div>
                 </div>
                 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-               
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                    <span class="error" id="password-error">* Passwords do not match</span>
-                </div>
-                
-            </form>
-            <form class="signup-form">
-                <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" required >
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="2ndCol">
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="phone" maxlength="10" required>
+                        <span class="error" id="digit-error">Phone number cannot exceed 10 digits.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password"  required>
+                        <span class="error" id="password-error">* Passwords do not match</span>
+                    </div>
                 </div>
             </form>
         </div>
+    </div>
+        
+        <div class="submit">
+            <button id="btn" type="submit">Create Account</button>
+            
+            <div class="log">
+                Already have an account? <span>
+                <button> Log in</button></span>
+            </div>
         </div>
-        
-        
-        <button id="btn" type="submit">Create Account</button>
-        <div class="log">Already have an account? <span>
-            <button> Log in</button></span></div>
+       
     </div>
 
 
